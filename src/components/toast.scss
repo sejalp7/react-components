@@ -1,0 +1,27 @@
+.toast {
+  width: 500px;
+  height: auto;
+  background-color: grey;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  margin: auto;
+  transform: translateY(-100px);
+  animation: fadein 0.5s;
+
+  .close {
+    justify-content: right;
+    cursor: pointer;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 10px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 10px; opacity: 1;}
+}
